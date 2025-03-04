@@ -1,0 +1,54 @@
+
+ /*滚动容器*/
+.idxPartOne{margin-top: 30px;}
+.idxPartOne .picScroll{position: relative;float: left;width: 477px;height: 375px;background: url(../images/picBg.jpg) no-repeat;}
+/*no-repeat 表示背景图不重复平铺，仅在容器中显示一次。若图片尺寸小于容器尺寸，就把图片周围留空。若图片尺寸大于容器尺寸就把图片被裁剪（需配合 background-position 调整显示区域）。 */
+.idxPartOne .picScroll .newTips{position: absolute;left: 0;top: 0;z-index: 2;}
+.scrollFun{ margin: 23px 27px 0 27px;width: 425px; height: 352px; overflow:hidden;; position: relative; }
+.scrollFun .move{width: 1000000px;}
+.scrollFun .move li { float: left; width: 425px; height: 352px;}
+.scrollFun .move li a{display: block;}
+.scrollFun .move li a .pic{display: block;width: 425px;height: 300px;}
+.scrollFun .move li a .des{line-height: 52px;font-size: 16px;color: #4e4741;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+.scrollFun .btn {  
+	position: absolute; 
+	bottom: 70px;
+	right: 35px; 
+}
+.scrollFun .btn li{ 
+	float: left; 
+	width: 25px; 
+	height: 5px; 
+	background-color:#fff; 
+	margin-left: 4px; 
+	filter: alpha(opacity=60); 
+	opacity:0.6;
+	cursor:pointer;
+}
+.scrollFun .btn li.current{
+	filter: alpha(opacity=100); 
+	opacity:1;
+}
+
+.idxPartOne-right{overflow: hidden;padding-left: 30px;width: 493px}
+.idxPartOne-right .tit{font-size: 18px;color: #423834;border-bottom:1px solid #d4d0cd;line-height: 30px;}
+.idxPartOne-right .tit span{border-bottom:3px solid #665843;position: relative;bottom: 1px;padding-bottom: 3px;}
+.idxPartOne-right .lastNews .box,
+.idxPartOne-right .adoptGuide .box{padding-top: 10px;border-top: 1px solid #fbf6f1;}
+.idxPartOne-right .lastNews .cnt,
+.idxPartOne-right .adoptGuide .cnt{height: 144px;overflow: hidden; background: #e0dbd6;padding: 10px 18px;font-size: 13px;color: #423834;line-height: 24px;}
+.idxPartOne-right .lastNews .cnt a,
+.idxPartOne-right .adoptGuide .cnt a{color: #c57b5d;font-size: 13px;}
+
+.idxPartOne-right .adoptGuide{margin-top: 15px;}
+.idxPartOne-right .adoptGuide .cnt{height: 96px;}
+
+/*小常识，关于我们*/
+.idxPartThree {padding-top: 25px;}
+.idxPartThree .title{font-size: 18px;color: #423834;border-bottom:1px solid #d4d0cd;line-height: 30px;}
+.idxPartThree .title span{border-bottom:3px solid #665843;position: relative;bottom: 1px;padding-bottom: 3px;}
+.idxPartThree .box{padding-top: 10px;border-top: 1px solid #fbf6f1;}
+.idxPartThree .box .cnt{height: 120px;overflow: hidden; background: #e0dbd6;padding: 10px 18px;font-size: 13px;color: #423834;line-height: 24px;}
+.idxPartThree .cnt a{color: #c57b5d;font-size: 13px;}
+.idxPartThree .tips{width: 478px;float: left;}
+.idxPartThree .aboutUs{overflow: hidden;padding-left: 30px;}

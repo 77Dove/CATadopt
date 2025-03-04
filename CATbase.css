@@ -1,0 +1,144 @@
+@charset "utf-8";
+html {
+font-size: 62.5%;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-overflow-scrolling: touch;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{font-size:100%;}
+legend{color:#000;}
+textarea{overflow:auto;}
+/* =e Reset */
+
+/* =s base */
+::-moz-selection{background:#2DB1C8; color:#fff;} 
+::selection {background:#2DB1C8; color:#fff;} 
+i{font-style:normal;}
+a{text-decoration: none;border: 0;font-size: 100%;margin: 0;padding: 0;vertical-align: baseline;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease;transition: all 0.2s ease;}
+.clr:after{clear: both;content:'\0020';display: block;visibility:hidden;height:0;}
+.clr{zoom:1;}
+/* =e base */
+body,html{ -webkit-font-smoothing: antialiased;background:url(../images/bg.jpg) repeat-x center top #efeae5;font-family: Microsoft Yahei;}
+.container{width: 1000px;margin: 0 auto;}
+
+
+/* s= 公共头部*/
+.header .language{text-align: right;font-size: 14px;color: #52443f;padding-top: 12px;}
+.header .language a{font-size: 14px;color: #a49c96;}
+.header .language a.current{color: #453936;}
+.header .logo{float: left;width:50px;height:100px;}
+.header .searBox{float: right;padding-top: 25px;}
+.header .searBox #seaInp{float: left;height: 24px;padding: 8px 16px;background: #fff;width: 220px;background: #fff;border: 0;outline: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;}
+.header .searBox #seaSub{float: left;outline: 0;border:0;background: url("D:\WebGIS\实验\实验一\image\seasub.png") no-repeat -2px -3px;width: 65px;height: 40px;cursor: pointer;}
+.header .searBox #seaSub:hover{
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+
+/*navi*/
+.nav{margin-top: 10px;height: 40px;line-height: 40px;background: #423834;border-radius: 20px;-webkit-border-radius: 20px;}
+.nav li{float: left;text-align: center;position: relative;padding: 0 21px;}
+.nav li .lev1{display: block;color: #fceae2;font-size: 14px;}
+.nav li .lev1 em{
+	display: inline-block;
+	margin-left: 3px;
+	vertical-align: middle;
+	background: url(../images/sprites.png) no-repeat -85px -3px;
+	width: 9px;
+	height: 4px;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+.nav li .hideNav{display: none;z-index:999;position: absolute;width: 100%;left: 0;top: 40px;}
+.nav li .hideNav p{background:url(../images/navBg.png);}
+.nav li .hideNav a{display: block;height: 40px;line-height: 40px;color: #b3901e;font-size: 14px;}
+.nav li .hideNav p:hover{opacity: 0.9;filter:alpha(opacity=50);}
+
+.nav li:hover{background: #f58220;}
+.nav li:hover .hideNav{display: block;}
+.nav li:hover .lev1 em{
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/* e= 公共头部*/
+
+
+/* s = 待领养猫猫*/
+.idxPartTwo{padding-top: 25px}
+.idxPartTwo .title{border-bottom:1px solid #d4d0cd;}
+.idxPartTwo .title .fl{font-size:18px;color: #423834;float: left;}
+.idxPartTwo .title .fl em{margin-right: 6px;background: url(../images/sprites.png) no-repeat;display: inline-block;vertical-align: middle;border-bottom:3px solid #665843;padding-bottom: 5px;position: relative;bottom: -2px;}
+.idxPartTwo .title .fl em.cat{background-position:-120px -7px;width: 37px;height: 37px;;}
+.idxPartTwo .title .fl em.dog{background-position:-174px -7px;width: 40px;height: 37px;}
+.idxPartTwo .title .more{font-size: 14px;color: #423834;float: right;position: relative;bottom: -18px;}
+.idxPartTwo .list{padding-top: 15px;border-top: 1px solid #fbf6f1;}
+.idxPartTwo .list li{float: left;margin-left: 6px;width: 185px;padding: 5px;}
+.idxPartTwo .list li.first{margin-left: 1px;}
+.idxPartTwo .list li .pic,
+.idxPartTwo .list li .pic img{width: 185px;height: 130px;display: block;}
+.idxPartTwo .list li .txt{color: #423834;padding-top: 3px;}
+.idxPartTwo .list li .txt .name{font-size: 14px;height:20px;overflow: hidden;}
+.idxPartTwo .list li .txt .years{font-size: 12px;}
+.idxPartTwo .list li:hover{
+	background: #e0dbd6;
+}
+/*  e = 待领养猫猫*/ 
+
+/* s= 公共尾部*/
+.footer{margin-top: 55px;padding: 30px 0;color: #d1b3a6;font-size: 12px;background: #37302d;}
+.footer .rows{padding-bottom: 20px;}
+.footer .leftName{color: #7e6e68;float: left;width: 80px;}
+.footer .rightCnt{overflow: hidden;line-height: 23px;width: 750px;}
+/* e= 公共尾部*/
+
+
+/* s =nowsite */
+.nowSite{padding:25px 0;}
+.nowSite a,.nowSite{font-size: 14px;color: #988983;}
+/* e =nowsite */
+
+
+/*pager */
+.pager{float: right;padding: 40px 0;}
+.pager a,
+.pager span {
+  float: left;
+  margin: 0 5px;
+  border-radius: 2px;
+  height: 28px;
+  line-height: 28px;
+  color: #423834;
+  text-align: center;
+  width: 28px;
+  font-size: 14px;
+  text-align: center;
+  border:1px solid #d8cfca;
+}
+.pager .active,
+.pager a:hover,
+.pager span:hover{
+  color: #fff;
+  background: #423834;
+  border-color:#423834;
+}
+.pager .prev,
+.pager .next{width: 63px;}
+
+
